@@ -32,7 +32,7 @@ async def root():
 
 
 def export_openapi_scheme():
-    with open('openapi.json', 'w') as file:
+    with open('openapi/openapi.json', 'w') as file:
         json.dump(get_openapi(
             title=app.title,
             version=app.version,
