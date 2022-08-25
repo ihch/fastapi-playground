@@ -26,7 +26,7 @@ class Message(BaseModel):
 async def root():
     return {
         "message": "Hello, World!",
-        "date": datetime.datetime(),
+        "date": datetime.datetime.now(),
         "type": Type.JSON
     }
 
